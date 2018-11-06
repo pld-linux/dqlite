@@ -14,8 +14,6 @@ BuildRequires:	libtool
 BuildRequires:	sqlite3-devel >= PATCHED_VERSION_see_README
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		skip_post_check_so	.*
-
 %description
 This repository provides the dqlite C library (libdqlite), which can
 be used to expose a %{name} database over the network and replicate it
