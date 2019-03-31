@@ -2,7 +2,7 @@ Summary:	%{name} library
 Summary(pl.UTF-8):	Biblioteka %{name}
 Name:		dqlite
 Version:	0.2.4
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Libraries
 Source0:	https://github.com/CanonicalLtd/dqlite/archive/v%{version}.tar.gz
