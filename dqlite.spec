@@ -1,16 +1,18 @@
 Summary:	%{name} library
 Summary(pl.UTF-8):	Biblioteka %{name}
 Name:		dqlite
-Version:	0.2.4
-Release:	2
-License:	Public Domain
+Version:	1.4.0
+Release:	1
+License:	LGPLv3
 Group:		Libraries
-Source0:	https://github.com/CanonicalLtd/dqlite/archive/v%{version}.tar.gz
-# Source0-md5:	35a3001090b7df1a679bfc4ac996b8b6
-URL:		https://github.com/CanonicalLtd/dqlite
+Source0:	https://github.com/canonical/dqlite/archive/v%{version}.tar.gz
+# Source0-md5:	43b7d1b8ccda54a379a6bfb92a98ae6f
+URL:		https://github.com/canonical/dqlite
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	libco-devel
 BuildRequires:	libtool
+BuildRequires:	raft-devel
 BuildRequires:	sqlite3-devel(wal_replication)
 Requires:	sqlite3(wal_replication)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
