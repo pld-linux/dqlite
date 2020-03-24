@@ -47,7 +47,6 @@ This package contains static %{name} library.
 %build
 %{__libtoolize}
 %{__aclocal}
-%{__autoheader}
 %{__autoconf}
 %{__automake}
 
