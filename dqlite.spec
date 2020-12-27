@@ -1,5 +1,5 @@
-Summary:	%{name} library
-Summary(pl.UTF-8):	Biblioteka %{name}
+Summary:	dqlite library
+Summary(pl.UTF-8):	Biblioteka dqlite
 Name:		dqlite
 Version:	1.4.0
 Release:	1
