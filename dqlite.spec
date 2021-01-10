@@ -2,7 +2,7 @@ Summary:	dqlite library - distributed SQLite engine
 Summary(pl.UTF-8):	Biblioteka dqlite - rozproszony silnik SQLite
 Name:		dqlite
 Version:	1.6.0
-Release:	2
+Release:	3
 License:	LGPL v3 with exception
 Group:		Libraries
 #Source0Download: https://github.com/canonical/dqlite/releases
@@ -38,7 +38,7 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libuv-devel >= 1.8.0
 Requires:	raft-devel >= 0.9.25
-Requires:	sqlite3-devel>= 3.22.0
+Requires:	sqlite3-devel >= 3.22.0
 
 %description devel
 This package contains development files for the dqlite library.
