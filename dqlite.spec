@@ -14,10 +14,10 @@ BuildRequires:	automake >= 1:1.11
 BuildRequires:	libtool >= 2:2
 BuildRequires:	libuv-devel >= 1.8.0
 BuildRequires:	pkgconfig
-BuildRequires:	raft-devel >= 0.9.25
+BuildRequires:	raft-devel >= 0.14.0
 BuildRequires:	sqlite3-devel >= 3.22.0
 Requires:	libuv >= 1.8.0
-Requires:	raft >= 0.9.25
+Requires:	raft >= 0.14.0
 Requires:	sqlite3 >= 3.22.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +37,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki dqlite
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libuv-devel >= 1.8.0
-Requires:	raft-devel >= 0.9.25
+Requires:	raft-devel >= 0.14.0
 Requires:	sqlite3-devel >= 3.22.0
 
 %description devel
