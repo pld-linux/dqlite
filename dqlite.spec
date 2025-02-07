@@ -1,13 +1,13 @@
 Summary:	dqlite library - distributed SQLite engine
 Summary(pl.UTF-8):	Biblioteka dqlite - rozproszony silnik SQLite
 Name:		dqlite
-Version:	1.12.0
+Version:	1.18.0
 Release:	1
 License:	LGPL v3 with exception
 Group:		Libraries
 #Source0Download: https://github.com/canonical/dqlite/releases
 Source0:	https://github.com/canonical/dqlite/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	700b6be842552997b18f0c43b8054676
+# Source0-md5:	2c9921fad9a104e743f611cb27a619be
 URL:		https://github.com/canonical/dqlite
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake >= 1:1.11
