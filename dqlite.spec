@@ -22,7 +22,7 @@ Requires:	sqlite3 >= 3.22.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # NDEBUG undefines __assert_fail in glibc assert.h
-%define                filterout_cpp           -DNDEBUG
+%define		filterout_cpp	-DNDEBUG
 
 %description
 This package provides the dqlite C library (libdqlite), which can be
