@@ -1,13 +1,13 @@
 Summary:	dqlite library - distributed SQLite engine
 Summary(pl.UTF-8):	Biblioteka dqlite - rozproszony silnik SQLite
 Name:		dqlite
-Version:	1.18.0
+Version:	1.18.4
 Release:	1
 License:	LGPL v3 with exception
 Group:		Libraries
 #Source0Download: https://github.com/canonical/dqlite/releases
 Source0:	https://github.com/canonical/dqlite/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	2c9921fad9a104e743f611cb27a619be
+# Source0-md5:	4d6f0560b606865e9ad6b9632b2a3a89
 URL:		https://github.com/canonical/dqlite
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake >= 1:1.11
@@ -20,6 +20,9 @@ Requires:	libuv >= 1.8.0
 Requires:	raft >= 0.14.0
 Requires:	sqlite3 >= 3.22.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# NDEBUG undefines __assert_fail in glibc assert.h
+%define                filterout_cpp           -DNDEBUG
 
 %description
 This package provides the dqlite C library (libdqlite), which can be
@@ -89,12 +92,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS LICENSE README.md
-%attr(755,root,root) %{_libdir}/libdqlite.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libdqlite.so.0
+%{_libdir}/libdqlite.so.*.*.*
+%ghost %{_libdir}/libdqlite.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libdqlite.so
+%{_libdir}/libdqlite.so
 %{_includedir}/dqlite.h
 %{_pkgconfigdir}/dqlite.pc
 
